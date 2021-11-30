@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/StartScreen.gd" type="Script" id=1]
+[ext_resource path="res://assets/Unique.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/font.tres" type="DynamicFont" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 120
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="StartScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_top = -1.0
+margin_right = -2.0
+margin_bottom = -147.0
+rect_scale = Vector2( 1.05376, 0.932947 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = "the Maze Runner "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 97.4589
+margin_top = 374.169
+margin_right = 256.459
+margin_bottom = 456.169
+rect_scale = Vector2( 1.5139, 2.2077 )
+text = "Éviter le virus pour vivre 
+Z avance 
+A a gauche 
+S arrier 
+D a droit"
+align = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -444.86
+margin_top = -377.425
+margin_right = 778.14
+margin_bottom = -242.425
+rect_scale = Vector2( 0.757968, 0.811319 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = "Appuyez sur <espace> pour démarrer le jeux"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreNotice" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -43.9772
+margin_top = -184.05
+margin_right = 491.023
+margin_bottom = -49.0498
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+text = "Score : 10"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
